@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://mbzuai-cl.github.io/2023/programday1/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--<base href=".">--><base href=".">
+    <link rel="shortcut icon" type="image/png" href="https://mbzuai-cl.github.io/2023/assets/favicon.png">
+    <link rel="stylesheet" type="text/css" media="all" href="./MLLM2024_day1_files/main.css">
+    <meta name="description" content="MBZUAI Machine Learning for Large Models Workshop 2024">
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+    <meta name="KeyWords" content="Conference">
+    <title>1st MBZUAI Machine Learning for Large Models Workshop 2024</title>
+</head>
+
+<body>
+
+    <div class="banner">
+        <img src="./MLLM2024_day1_files/banner.jpeg" alt="MBZUAI Machine Learning for Large Models 2024 Banner">
+        <div class="top-left">
+            <span class="title2">1st MBZUAI Workshop on</span>
+            <br><br> <span class="title1">Machine Learning for Large Models</span> 
+            <!-- <br><br>
+            <span class="year">Empowering Sustainable Futures</span> -->
+        </div>
+        <div class="bottom-right">
+            June 3-4, 2024 <br> MBZUAI, Abu Dhabi
+        </div>
+    </div>
+
+    <table class="navigation">
+        <tbody><tr>
+            <td class="navigation">
+                <a class="current" title="Conference Home Page" href="MLLM2024.html">Home</a>
+            </td>
+            <td class="navigation">
+                <a title="Speakers List" href="speakerlist.html">Speakers List</a> 
+            </td>
+            <td class="navigation">
+                <a title="Conference Program" href="day1.html">Program Day 1</a> 
+            </td>
+            <!-- <td class="navigation">
+                <a title="Conference Program" href="https://mbzuai.ac.ae/">MBZUAI</a> 
+            </td> -->
+            <td class="navigation">
+                <a title="Conference Program Day 2" href="day2.html">Program Day 2</a> 
+            </td>
+        </tr>
+    </tbody></table>
+
+   
+
+    <h2>Day 1 Program (June 3, Mon)</h2>
+
+    <table id="Eric Xing">
+        <tbody><tr class="speaker">
+            <td class="date" rowspan="3">
+                9:00 am
+            </td>
+            <td class="title">
+                Openning remarks
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://mbzuai.ac.ae/study/faculty/professor-eric-xing/"><b>Eric Xing</b></a> (MBZUAI)
+            </td>
+        </tr>
+    </tbody></table>
+
+    <table id="Quanquan Gu">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                9:30 am
+            </td>
+            <td class="title">
+                Self-Play Preference Optimization for Language Model Alignment
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="http://web.cs.ucla.edu/~qgu/"><b>Quanquan Gu</b></a> (UCLA)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Traditional reinforcement learning from human feedback (RLHF) approaches relying on parametric models like the Bradley-Terry model 
+                fall short in capturing the intransitivity and irrationality in human preferences. Recent advancements suggest that directly working 
+                with preference probabilities can yield a more accurate reflection of human preferences, enabling more flexible and accurate language 
+                model alignment. In this talk, I will introduce a self-play-based method for language model alignment, which treats the problem as a 
+                constant-sum two-player game aimed at identifying the Nash equilibrium policy. Our approach, dubbed \textit{Self-Play Preference Optimization} 
+                (SPPO), approximates the Nash equilibrium through iterative policy updates and enjoys theoretical convergence guarantee. Our method can 
+                effectively increase the log-likelihood of the chosen response and decrease that of the rejected response, which cannot be trivially 
+                achieved by symmetric pairwise loss such as Direct Preference Optimization (DPO) and Identity Preference Optimization (IPO). In our 
+                experiments, using only 60k prompts (without responses) from the UltraFeedback dataset and without any prompt augmentation, by leveraging 
+                a pre-trained preference model PairRM with only 0.4B parameters, SPPO can obtain a model from fine-tuning Mistral-7B-Instruct-v0.2 that 
+                achieves the state-of-the-art length-controlled win-rate of 28.53% against GPT-4-Turbo on AlpacaEval 2.0. It also outperforms the (iterative) 
+                DPO and IPO on MT-Bench and the Open LLM Leaderboard. Notably, the strong performance of SPPO is achieved without additional external 
+                supervision (e.g., responses, preferences, etc.) from GPT-4 or other stronger language models.
+        </td></tr>
+    </tbody></table>
+    
+     <table id="Hadi Abdine">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                10:00am
+            </td>
+            <td class="title">
+                Beyond Classification: Multimodal Protein Function Prediction with Prot2Text
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://hadi-abdine.github.io"><b>Hadi Abdine</b></a> (Ecole Polytechnique)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                In recent years, significant advancements have been made in protein function 
+                prediction through machine learning. However, most methods limit themselves 
+                to multi-classification, assigning predefined labels to proteins. This talk 
+                presents Prot2Text, a groundbreaking approach that predicts protein functions 
+                in a free text format, transcending traditional binary or categorical classifications. 
+                Prot2Text leverages an encoder-decoder framework, combining Graph Neural Networks (GNNs) 
+                and Large Language Models (LLMs) to integrate diverse data types such as protein sequences, 
+                structures, and textual annotations. This multimodal approach enables a comprehensive 
+                representation of protein functions, allowing for the generation of detailed and precise 
+                functional descriptions. We will discuss the evaluation of Prot2Text using a multimodal 
+                protein dataset extracted from SwissProt and share empirical results demonstrating its 
+                effectiveness. This work underscores the transformative potential of integrating GNNs and 
+                LLMs, providing researchers with advanced tools for more accurate and nuanced function prediction 
+                for both known and novel proteins.
+        </td></tr>
+    </tbody></table>
+
+   
+
+     <table>
+        <tbody><tr>
+            <td class="date" rowspan="2">
+                10:30am
+            </td>
+            <td class="title-special">
+                Coffee Break
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <!-- Kept for Spacing -->
+            </td>
+        </tr>
+    </tbody></table>
+
+ <table id="Francesco Locatello">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                11:00am
+            </td>
+            <td class="title">
+                Are large models enough for causality? 
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://www.francescolocatello.com"><b>Francesco Locatello</b></a> (ISTA)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                Machine learning and AI have the potential to transform data-driven scientific discovery, enabling accurate predictions for several 
+                scientific phenomena. Much of the current progress is driven by scale and, conveniently, many scientific questions require analyzing 
+                massive amounts of data. At the same time, in scientific applications predictions are often incorporated into broader analysis to draw 
+                new insights that are causal in nature. In this talk I will explore the role of scale in causal analyses. I will start by showing it is 
+                possible to extract causal knowledge from a pre-trained statistical model that was trained without causal considerations. Next, I will
+                discuss when, how, and why causal directions can be directly predicted by transformers trained with supervised learning in a controlled 
+                synthetic setting. Finally, I will discuss the open challenges solving real-world causal downstream tasks in the sciences. For this, I 
+                will present ISTAnt, the first real-world benchmark for estimating causal effects from high-dimensional observations in experimental ecology.
+        </td></tr>
+    </tbody></table>
+
+    <table id="Danqi Chen">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                11:30am
+            </td>
+            <td class="title">
+                To be determined.
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://www.cs.princeton.edu/~danqic/"><b>Danqi Chen</b></a> (Princeton University)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                To be determined.
+        </td></tr>
+    </tbody></table>
+   
+
+   <table>
+        <tbody><tr>
+            <td class="date" rowspan="2">
+                12:00pm
+            </td>
+            <td class="title-special">
+                Lunch
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <!-- Kept for Spacing -->
+            </td>
+        </tr>
+    </tbody></table>
+
+ <table id="Timothy Baldwin">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                2:00pm
+            </td>
+            <td class="title">
+                To be determined.
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://eltimster.github.io/www/"><b>Timothy Baldwin</b></a> (MBZUAI and The University of Melbourne)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                To be determined.
+        </td></tr>
+    </tbody></table>
+
+    <table id="Samuel Horvath">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+             2:30pm
+            </td>
+            <td class="title">
+                To be determined.
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://samuelhorvath.github.io/"><b>Samuel Horvath</b></a> (MBZUAI)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                To be determined.
+        </td></tr>
+    </tbody></table>
+
+    
+
+    <table id="Nikhil Kandpal">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                3:00pm
+            </td>
+            <td class="title">
+                To be determined.
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://nkandpa2.github.io/"><b>Nikhil Kandpal</b></a> (University of Toronto)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                To be determined.
+        </td></tr>
+    </tbody></table>
+
+    <table>
+        <tbody><tr>
+            <td class="date" rowspan="2">
+                3:30pm
+            </td>
+            <td class="title-special">
+                Coffee Break
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                <!-- Kept for Spacing -->
+            </td>
+        </tr>
+    </tbody></table>
+
+    <table id="Hector Liu">
+        <tbody><tr>
+            <td class="date" rowspan="3">
+                4:00pm-5:40pm
+            </td>
+            <td class="title">
+                LLM360: DEMYSTIFYING LLM AND TOWARDS OPEN SOURCE AI (Special Session)
+            </td>
+        </tr>
+        <tr>
+            <td class="speaker">
+                <a href="https://hunterhector.github.io/"><b>Hector Liu</b></a> (Petuum)
+            </td>
+        </tr>
+        <tr>
+            <td class="abstract">
+                The rapid advancements in Artificial Intelligence (AI) and Large Language Models (LLMs) have transformed numerous fields, yet their complexities often remain obscure to many. This talk aims to shed light on the building process of LLMs and promote the LLM360 initiative of open-source AI, offering both theoretical insights and practical knowledge for researchers and practitioners alike. <br><br>
+
+                We will discuss the LLM360 project's commitment to open-source principles, highlighting our attempts to democratize AI by making LLM methodologies publicly available. The talk will then delve into the process of pretraining large language models using the LLM360 experiences materials, and provide an overview of research relevant to LLM training. We conclude by presenting a series of case studies that utilize the LLM360 artifacts showcasing LLM behavior and performance.
+        </td></tr>
+    </tbody></table>
+
+    
+</body></html>
