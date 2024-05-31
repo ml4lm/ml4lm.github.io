@@ -260,23 +260,23 @@
 
     
 
-    <table id="Nikhil Kandpal">
+    <table id="Nils Hendrik Lukas">
         <tbody><tr>
             <td class="date" rowspan="3">
                 3:00pm
             </td>
             <td class="title">
-                Understanding Language Models Through the Lens of their Training Data
+                Analyzing the Privacy of Personal Information in Language Models
             </td>
         </tr>
         <tr>
             <td class="speaker">
-                <a href="https://nkandpa2.github.io/"><b>Nikhil Kandpal</b></a> (University of Toronto)
+                <a href="https://nilslukas.github.io"><b>Nils Hendrik Lukas</b></a> (MBZUAI)
             </td>
         </tr>
         <tr>
             <td class="abstract">
-                The behaviors of language models are non-trivially influenced by their training data, presenting a significant challenge in understanding how properties of training datasets drive model responses. This talk explores methodologies to quantify these influences despite complexities introduced by the black-box nature of language models and large-scale training datasets. I will discuss key findings from recent studies that link high-level model behaviors, such as memorization and fact acquisition, to global characteristics of their training data. Additionally, I will discuss recent advances in techniques like semi-parametric language modeling and retrieval-augmented generation, which offer new ways to trace model outputs back to individual training instances. 
+                Language models (LMs) have been shown to leak information about their training data through sentence-level membership inference and reconstruction attacks. Understanding the risk of LMs leaking Personally Identifiable Information (PII) has received less attention, which can be attributed to the false assumption that dataset curation techniques such as scrubbing are sufficient to prevent PII leakage. Scrubbing reduces but does not prevent the risk of PII leakage. We introduce game-based definitions for three types of PII leakage via black-box extraction, inference, and reconstruction attacks with only API access to the LM. Our main contributions are: (i) novel attacks that can extract up to 10 times more PII sequences than existing attacks, (ii) showing that sentence-level differential privacy reduces the risk of PII disclosure but still leaks about 3% of PII sequences, and (iii) a subtle connection between record-level membership inference and PII reconstruction. I will summarize challenges with privacy-preserving fine-tuning of LMs, describe our proposed solutions, and provide an outlook on challenges and promising future research directions to protect sensitive information in LMs.
         </td></tr>
     </tbody></table>
 
